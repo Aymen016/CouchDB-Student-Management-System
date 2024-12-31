@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CouchDB Student Database</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff6fb1, #6a5acd);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 1.5rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background: linear-gradient(120deg, #ff6fb1, #6a5acd);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(120deg, #6a5acd, #ff6fb1);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 20px;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+         /* Animations */
+         @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to CouchDB Student Database
+    </header>
+
+    <div class="container">
+        <h1>What is CouchDB?</h1>
+        <p>
+            Apache CouchDB is an open-source database software that uses a document-oriented NoSQL model.
+            It allows you to store data in a flexible JSON format and is known for its scalability, replication capabilities, 
+            and ease of access via RESTful HTTP APIs.
+        </p>
+
+        <h1>About the Student Database</h1>
+        <p>
+            The Student Database is built using CouchDB to demonstrate the power of document-oriented data storage.
+            This database can manage student records, including names, ages, and majors, while providing efficient 
+            operations like inserting, retrieving, updating, and deleting student records.
+        </p>
+
+        <a href="students" class="btn">View Students</a>
+        <a href="/insert_students" class="btn">Add 100 Students</a>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Scalable</h3>
+                <p>CouchDB is designed to scale horizontally and handle large datasets effortlessly.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Reliable</h3>
+                <p>Data replication ensures high availability and consistency, even in distributed environments.</p>
+            </div>
+            <div class="feature-box">
+                <h3>REST API</h3>
+                <p>Access your data easily with CouchDB's HTTP RESTful API support.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 CouchDB Student Database | Built with ❤️ and CouchDB
+    </footer>
+</body>
+</html>
