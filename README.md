@@ -2,6 +2,8 @@
 
 This project is a web-based Student Management System built using **Flask** and **CouchDB**. It allows users to create, read, update, and delete student records, with features like bulk data insertion and detailed student views.
 
+<img width="1024" height="1024" alt="ChatGPT Image Jul 24, 2025, 11_57_06 AM" src="https://github.com/user-attachments/assets/401a7270-9df7-4c5a-95b2-8d01746486da" />
+
 ---
 
 ## 🧠 What is CouchDB?
@@ -138,7 +140,7 @@ This project is licensed under the **MIT License**.
 
 **Aymen Baig**  
 📧 [ayemenbaig26@gmail.com](mailto:ayemenbaig26@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/aymen-baig-700a06284/)
+🔗 [LinkedIn](https://linkedin.com/in/aymen-baig-700a06284/) <br>
 🔗 [GitHub](https://github.com/Aymen016)
 
 ---
